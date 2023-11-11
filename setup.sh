@@ -9,6 +9,6 @@ if [ $? -eq 0 ]; then
     # Executa o arquivo index.js
     node /home/jovyan/work/index.js
 else
-    echo "Erro ao instalar dependências. Por favor, verifique e corrija os problemas antes de continuar."
+   node /home/jovyan/work/index.js
     exit 1
 fi
