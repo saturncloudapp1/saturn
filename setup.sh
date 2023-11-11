@@ -1,23 +1,4 @@
 #!/bin/bash
-
-# Define o diretório de trabalho
-diretorio_trabalho="/home/jovyan/work"
-
-# Muda para o diretório de trabalho
-cd "$diretorio_trabalho" || exit
-
-# Verifica se o Node.js está instalado
-if ! command node -v &> /dev/null; then
-    echo "Node.js não está instalado. Por favor, instale o Node.js antes de continuar."
-    exit 1
-fi
-
-# Verifica se o npm está instalado
-if ! command npm -v &> /dev/null; then
-    echo "npm não está instalado. Por favor, instale o npm antes de continuar."
-    exit 1
-fi
-
 # Instala as dependências do Node.js usando npm
 npm install --prefix /home/jovyan/work
 
