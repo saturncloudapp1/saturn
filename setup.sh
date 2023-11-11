@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Define o diretório de trabalho
+diretorio_trabalho="/home/jovyan/work"
+
+# Muda para o diretório de trabalho
+cd "$diretorio_trabalho" || exit
+
 # Verifica se o Node.js está instalado
 if ! command -v node &> /dev/null; then
     echo "Node.js não está instalado. Por favor, instale o Node.js antes de continuar."
