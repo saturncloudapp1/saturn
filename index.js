@@ -13,7 +13,7 @@ app.use(
     changeOrigin: true,
   })
 );
-//app.use(cors());
+app.use(cors());
 
 app.get('/', async (req, res) => {
       // Website you wish to allow to connect
