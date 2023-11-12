@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const port = 8000;
 const cors = require('cors')
-const createProxyMiddleware = require('http-proxy-middleware')
+const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const ipExterno = '0.0.0.0';
 
