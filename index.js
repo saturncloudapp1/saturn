@@ -7,9 +7,9 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 const ipExterno = '0.0.0.0';
 
 app.use(
-  '/', // O prefixo da URL que você deseja redirecionar
+  '/test', // O prefixo da URL que você deseja redirecionar
   createProxyMiddleware({
-    target: 'https://pd-satur-nodejs-set-10cb88bf8e994930acc0c928bc718f7b.community.saturnenterprise.io',
+    target: 'https://localhost:3000',
     changeOrigin: true,
   })
 );
