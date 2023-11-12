@@ -1,9 +1,17 @@
 const express = require('express');
 const app = express();
 const port = 8000;
-//const cors = require('cors')
+const cors = require('cors')
 
 const ipExterno = '0.0.0.0';
+
+app.use(
+  '/', // O prefixo da URL que você deseja redirecionar
+  createProxyMiddleware({
+    target: 'https://pd-satur-nodejs-set-10cb88bf8e994930acc0c928bc718f7b.community.saturnenterprise.io',
+    changeOrigin: true,
+  })
+);
 //app.use(cors());
 
 app.get('/', async (req, res) => {
@@ -21,7 +29,9 @@ app.get('/', async (req, res) => {
 
 app.get('/test', async (req, res) => {
     //console.log("REQ RECEBIDA")
-  await res.send('<div><p>ola html</p></div>')
+    await res.json({
+      hello:'hello word teste'
+  })
 });
 
 app.listen(port,ipExterno, () => {
