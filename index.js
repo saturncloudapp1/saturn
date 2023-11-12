@@ -15,7 +15,8 @@ app.use(
 );
 app.use(cors({
   origin: '*',  // Permitindo todas as origens (não seguro para produção)
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',));
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+}));
 app.get('/', async (req, res) => {
       // Website you wish to allow to connect
    /*res.setHeader('Access-Control-Allow-Origin', '*');
