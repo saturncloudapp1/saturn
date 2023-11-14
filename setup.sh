@@ -23,6 +23,9 @@ sudo service nginx start
 
 sudo service nginx status
 
+#memoria ram
+free -h
+
 sudo netstat -tuln | grep nginx
 
 node /home/jovyan/work/index.js &
