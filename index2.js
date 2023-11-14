@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 8000;
+const port = 8002;
 const cors = require('cors')
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
