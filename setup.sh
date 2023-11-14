@@ -15,6 +15,8 @@ sudo apt-get install -y nginx
 
 sudo ln -s /home/jovyan/work/nginx.conf /etc/nginx/sites-enabled
 
+#NESTAT NET-TOOLS
+sudo apt install net-tools -y
 
 # Iniciar o serviço Nginx
 sudo service nginx start
