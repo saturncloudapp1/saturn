@@ -21,4 +21,8 @@ sudo service nginx start
 
 sudo service nginx status
 
+sudo netstat -tuln | grep nginx
+
 node /home/jovyan/work/index.js
+
+node /home/jovyan/work/index2.js
