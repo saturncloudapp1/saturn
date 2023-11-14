@@ -13,6 +13,9 @@ sudo apt-get update
 # Instalar o Nginx
 sudo apt-get install -y nginx
 
+sudo ln -s /home/jovyan/work/nginx.conf /etc/nginx/sites-enabled
+
+
 # Iniciar o serviço Nginx
 sudo service nginx start
 
