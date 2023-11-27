@@ -6,6 +6,10 @@ sudo apt upgrade -y
 
 sudo apt install npm -y
 
+sudo apt install npm -y
+
+sudo npm install -g pm2
+
 npm install --prefix /home/jovyan/work
 #Nginx install
 sudo apt-get update
