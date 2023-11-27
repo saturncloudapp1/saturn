@@ -32,8 +32,10 @@ free -h
 
 sudo netstat -tuln | grep nginx
 
-node /home/jovyan/work/index.js &
+pm2 start /home/jovyan/work/index.js --name app-8001 --watch -- 8001
+pm2 start /home/jovyan/work/index.js --name app-8002 --watch -- 8002
+pm2 start /home/jovyan/work/index.js --name app-8003 --watch -- 8003
+pm2 start /home/jovyan/work/index.js --name app-8004 --watch -- 8004
+pm2 start /home/jovyan/work/index.js --name app-8005 --watch -- 8005
+pm2 start /home/jovyan/work/index.js --name app-8006 --watch -- 8006
 
-sleep 2
-
-node /home/jovyan/work/index2.js
